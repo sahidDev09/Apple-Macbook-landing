@@ -1,8 +1,14 @@
+import { Canvas } from "@react-three/fiber";
+import "./style.css";
+import { OrbitControls } from "@react-three/drei";
+import MacLanding from "./components/MacLanding";
+
 function App() {
   return (
-    <div>
-      <h1>Hello world</h1>
-    </div>
+    <Canvas>
+      <OrbitControls />
+      <MacLanding />
+    </Canvas>
   );
 }
 
