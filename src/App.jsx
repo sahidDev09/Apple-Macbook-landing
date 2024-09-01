@@ -4,8 +4,29 @@ import { Environment, ScrollControls } from "@react-three/drei";
 import MacLanding from "./components/MacLanding";
 
 function App() {
+  const menus = [
+    "iphone",
+    "iPad",
+    "Watch",
+    "WWDC",
+    "Mac",
+    "Services",
+    "products",
+  ];
+
   return (
     <div className=" w-full h-screen ">
+      <div className="flex gap-6 my-4 navbar absolute top-0 left-1/2 -translate-x-1/2">
+        {menus.map((e, index) => (
+          <a
+            key={index}
+            className="text-white text-lg hover:text-blue-400 transition duration-300 ease-in-out"
+            href="">
+            {e}
+          </a>
+        ))}
+      </div>
+
       <div className="tracking-tight text-white flex flex-col items-center absolute top-32 left-1/2 -translate-x-1/2 text-7xl font-bold">
         <h3 className=" masked">Macbook pro M3</h3>
         <p className=" text-2xl tracking-normal font-normal">
@@ -16,7 +37,7 @@ function App() {
           hours.
         </p>
       </div>
-      <Canvas camera={{ fov: 12, position: [0, -10, 220] }}>
+      <Canvas camera={{ fov: 12, position: [0, -8, 220] }}>
         <Environment
           files={[
             "https://dl.polyhaven.org/file/ph-assets/HDRIs/exr/4k/studio_small_09_4k.exr",
@@ -26,6 +47,7 @@ function App() {
           <MacLanding />
         </ScrollControls>
       </Canvas>
+      <h1 className=" text-3xl text-center my-2 mb-5">Developed By SAHID AHMED</h1>
     </div>
   );
 }
