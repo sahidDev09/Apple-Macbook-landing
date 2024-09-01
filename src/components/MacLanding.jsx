@@ -1,11 +1,12 @@
+/* eslint-disable no-unused-vars */
 /* eslint-disable react/no-unknown-property */
-import { useGLTF, useScroll } from "@react-three/drei";
+import { useGLTF, useScroll, useTexture } from "@react-three/drei";
 import { useFrame } from "@react-three/fiber";
 import * as THREE from "three";
 
-
 const MacLanding = () => {
   let model = useGLTF("./mac.glb");
+  let tex = useTexture("./red.jpg");
   let meshes = {};
 
   model.scene.traverse((e) => {
@@ -13,6 +14,10 @@ const MacLanding = () => {
   });
 
   meshes.screen.rotation.x = THREE.MathUtils.degToRad(180);
+  meshes.matte.material.map = tex;
+  meshes.matte.material.emissiveIntensity = 0;
+  meshes.matte.material.metalness = 0;
+  meshes.matte.material.roughness = 1;
   let data = useScroll();
 
   useFrame((state, delta) => {
