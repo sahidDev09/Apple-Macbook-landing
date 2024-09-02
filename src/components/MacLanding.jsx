@@ -3,6 +3,7 @@
 import { useGLTF, useScroll, useTexture } from "@react-three/drei";
 import { useFrame } from "@react-three/fiber";
 import * as THREE from "three";
+import { cover } from "three/src/extras/TextureUtils.js";
 
 const MacLanding = () => {
   let model = useGLTF("./mac.glb");
@@ -16,8 +17,8 @@ const MacLanding = () => {
   meshes.screen.rotation.x = THREE.MathUtils.degToRad(180);
   meshes.matte.material.map = tex;
   meshes.matte.material.emissiveIntensity = 0;
-  meshes.matte.material.metalness = 0;
-  meshes.matte.material.roughness = 1;
+  meshes.matte.material.metalness = 1;
+  meshes.matte.material.roughness = 4;
   let data = useScroll();
 
   useFrame((state, delta) => {
