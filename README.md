@@ -1,11 +1,10 @@
 # 3D MacBook Pro Landing Page Animation
 
-This project is a 3D MacBook Pro landing page built with React, React Three Fiber, and React Drei. The animation showcases a rotating 3D model of a MacBook Pro, designed to be visually appealing and interactive for users. The project can be viewed live [here](your-live-preview-link).
+This project is a 3D MacBook Pro landing page built with React, React Three Fiber, and React Drei. The animation showcases a rotating 3D model of a MacBook Pro, designed to be visually appealing and interactive for users. The project can be viewed live [here](https://maclanding.netlify.app).
 
 ## Screenshots
 
-![Screenshot](https://thumbs2.imgbox.com/82/dc/05LwpJrS_t.png)
-
+![Screenshot](https://i.postimg.cc/J4vHF7XC/SCR-20240902-bhmx.png)
 
 ## Features
 
@@ -15,7 +14,7 @@ This project is a 3D MacBook Pro landing page built with React, React Three Fibe
 
 ## Demo
 
-Check out the live preview of the landing page [here](your-live-preview-link).
+Check out the live preview of the landing page [here](https://maclanding.netlify.app).
 
 ## Technologies Used
 
