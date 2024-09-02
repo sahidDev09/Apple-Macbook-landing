@@ -30,7 +30,7 @@ function App() {
       <div className="tracking-tight text-white flex flex-col items-center absolute top-32 left-1/2 -translate-x-1/2 text-7xl font-bold">
         <h3 className=" masked">Macbook pro M3</h3>
         <p className=" text-2xl tracking-normal font-normal">
-          We can do this all day.
+          Developed by Sahid
         </p>
         <p className=" text-sm text-gray-400 tracking-normal font-light text-center w-3/4">
           MacBook Pro has the longest battery life ever in a Mac — up to 22
@@ -47,7 +47,7 @@ function App() {
           <MacLanding />
         </ScrollControls>
       </Canvas>
-      <h1 className=" text-3xl text-center my-2 mb-5">Developed By SAHID AHMED</h1>
+     
     </div>
   );
 }
